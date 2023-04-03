@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LerCodigoDeBarras</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Mac Barcode </title>
 </head>
+
 <body>
 
-    
     <div id="resultado"></div>
     <div id="camera"></div>
-    
 
     <script src="quagga.min.js"></script>
 
     <script>
+
         Quagga.init({
-            inputStream : {
-            name : "Live",
-            type : "LiveStream",
-            target: document.querySelector('#camera')    // Or '#yourElement' (optional)
+            inputStream: {
+                name: "Live",
+                type: "LiveStream",
+                target: document.querySelector('#camera')    // Or '#yourElement' (optional)
             },
-            decoder : {
-            readers : ["code_128_reader"]
+            decoder: {
+                readers: ["code_128_reader"]
             }
-        }, function(err) {
+        }, function (err) {
             if (err) {
                 console.log(err);
                 return
@@ -34,11 +35,13 @@
             Quagga.start();
         });
 
-        Quagga.onDetected(function(data){
-            console.log(data);
-
-            document.querySelector('#resultado').innerHTML = data.codeResult.code;
+        Quagga.onDetected(function (data) {
+            console.log(data.codeResult.code);
+            document.querySelector('#resultado').innerText = data.codeResult.code;
         });
+
     </script>
+
 </body>
+
 </html>
