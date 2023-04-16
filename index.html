@@ -1,50 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Mac Barcode3 </title>
-    
+    <title>PORTAL ACCB</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">SUMÁRIO</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">TUTORIAIS</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">UNIDADES</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">LINKS</a>
+                </li>              
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">SOBRE O ACCB</a>
+                </li>
+            </ul>
+            <!--
+            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+            -->
+            <h1 class="container__titulo"><b class="container__titulo--negrito"> </b> </h1>
+        </div>
 
-    <div id="resultado"></div>
-    <div id="camera"></div>
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu">
+                <li class="opcoes__titulo_item">MENU</li>
+            </label>
 
-    <script src="quagga.min.js">
-    <script> import Quagga from 'quagga';
-    const Quagga = require('quagga').default;</script>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">MENU</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">TUTORIAIS</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">UNIDADES</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">LINKS</a>
+                </li>              
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">SOBRE O ACCB</a>
+                </li>
+            </ul>
 
+            <li class="opcoes__item"><a href="#" class="opcoes__link">TUTORIAIS</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">UNIDADES</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">LINKS</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">SOBRE O ACCB</a></li>
+        </ul>
+
+        <div class="container">           
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+                <p class="container__texto">Meu perfil</p>
+        </div>
+    </header>
+
+    
+    
+    <div class="card">
+
+        
+        <div class="card__descricao">
+            
+            <div class="descricao">
+                
+                <h2 class="descricao__titulo-livro">Final Fantasy 16</h2>
+                <p class="descricao__texto">Final Fantasy 16 A estréia da clássica franquia na atual geracao</p>
+            </div>
+            
+            <iframe class="videoTutorial" width="560" height="315" src="https://www.youtube.com/embed/p6gZuckQEbg" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+             
+
+        <div class="card__descricao">
+            
+            <div class="descricao">
+                
+                <h2 class="descricao__titulo-livro">Final Fantasy 16</h2>
+                <p class="descricao__texto">Final Fantasy 16 A estréia da clássica franquia na atual geracao</p>
+            </div>
+            
+            <iframe class="videoTutorial" width="560" height="315" src="https://www.youtube.com/embed/p6gZuckQEbg" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="card__descricao">
+            
+            <div class="descricao">
+                
+                <h2 class="descricao__titulo-livro">Final Fantasy 16</h2>
+                <p class="descricao__texto">Final Fantasy 16 A estréia da clássica franquia na atual geracao</p>
+            </div>
+            
+            <iframe class="videoTutorial" width="560" height="315" src="https://www.youtube.com/embed/p6gZuckQEbg" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="card_botoes">
+                              
+            
+        </div>
+
+       
+        
+              
+    </div>    
+
+    <div class="card">
+        
+        <div class="card__descricao">
+            
+            <div class="descricao">
+                
+                <h2 class="descricao__titulo-livro">Final Fantasy 16</h2>
+                <p class="descricao__texto">Final Fantasy 16 A estréia da clássica franquia na atual geracao</p>
+            </div>
+            
+            <iframe class="videoTutorial" width="560" height="315" src="https://www.youtube.com/embed/p6gZuckQEbg" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+       
+
+        <div class="card__descricao">
+            
+            <div class="descricao">
+                
+                <h2 class="descricao__titulo-livro">Final Fantasy 16</h2>
+                <p class="descricao__texto">Final Fantasy 16 A estréia da clássica franquia na atual geracao</p>
+            </div>
+            
+            <iframe class="videoTutorial" width="560" height="315" src="https://www.youtube.com/embed/p6gZuckQEbg" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="card_botoes">
+                              
+            
+        </div>
+
+        
+              
+    </div>  
+   
+
+ 
+    <hr />
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">ACCB</h2>
+                 
+        
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-
-        Quagga.init({
-            inputStream: {
-                name: "Live",
-                type: "LiveStream",
-                target: document.querySelector('#camera')    // Or '#yourElement' (optional)
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
             },
-            decoder: {
-                readers: ["code_128_reader"]
-                         
-            }
-        }, function (err) {
-            if (err) {
-                console.log(err);
-                return
-            }
-            console.log("Initialization finished. Ready to start");
-            Quagga.start();
         });
-
-        Quagga.onDetected(function (data) {
-            console.log(data.codeResult.code);
-            document.querySelector('#resultado').innerText = data.codeResult.code;
-        });
-
     </script>
+    
+
 
 </body>
 
